@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="unit_prompt" />
+    <string name="number1" />
+    <string name="number2" />
+    <string name="number3" />
+</resources>

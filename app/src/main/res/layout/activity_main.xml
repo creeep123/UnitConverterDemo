@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+
+        <Spinner
+            android:id="@+id/unitSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:prompt="@string/unit_prompt" />
+
+        <EditText
+            android:id="@+id/input_number"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:inputType="number|numberDecimal"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/convertedNumber1"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:text=""
+            android:textSize="60px"
+            android:textColor="@color/red"
+            android:layout_weight="1"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/convertedUnit1"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:text=""
+            android:textSize="40px"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/convertedNumber2"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="60px"
+            android:layout_weight="1"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/convertedUnit2"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:text=""
+            android:textSize="40px"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/convertedNumber3"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="60px"
+            android:layout_weight="1"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/convertedUnit3"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:text=""
+            android:textSize="40px"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/metreButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            android:onClick="metreClick"
+            android:src="@drawable/chizi"
+            android:text="x"
+            android:textSize="64sp" />
+
+        <ImageButton
+            android:id="@+id/celsiusButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:onClick="celsiusClick"
+            android:src="@drawable/wendu"
+            android:text="/"
+            android:textSize="64sp" />
+
+        <ImageButton
+            android:id="@+id/kilogramsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="kilogramsClick"
+            android:src="@drawable/zhongliang"
+            android:text="/"
+            android:textSize="64sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
